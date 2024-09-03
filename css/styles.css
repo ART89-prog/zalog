@@ -436,3 +436,123 @@ header .menu .item:active>a {
 
 
 
+
+
+
+
+.consultation .line {
+    width: 100%;
+    margin-bottom: 16px;
+}
+.consultation .line .field {
+    width: 100%;
+}
+.consultation .line .field input {
+    padding: 20px;
+    width: 100%;
+    height: 59px;
+    background: #F2F9FA;
+    border-radius: 6px;
+    border: none;
+    font-family: var(--font_family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000;
+}
+.consultation .line .field input::-webkit-input-placeholder {
+    font-family: var(--font_family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #2C332D;
+}
+.consultation .line .field input::-moz-placeholder {
+    font-family: var(--font_family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #2C332D;
+}
+.consultation .line .field input:-moz-placeholder {
+    font-family: var(--font_family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #2C332D;
+}
+.consultation .line .field input:-ms-input-placeholder {
+    font-family: var(--font_family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #2C332D;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+.form_agree-text {
+    font-family: var(--font_family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #000000;    
+}
+.form_agree-text a {
+    font-family: var(--font_family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #1591D8;  
+    text-decoration: none;    
+}
+.consultation button {
+    width: 100%;
+    height: 69px;
+    background:  var(--bg2);
+    border-radius: 6px;
+    font-family: var(--font_family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 69px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 26px;
+    border: 1px solid var(--bg2);
+    transition: all .4s;
+}
+.consultation button:hover {
+    background: #fff;
+    color: var(--bg2);
+}
+.checkbox label {
+    display: inline-block;
+    font-family: inherit;
+    position: relative;
+    padding-left: 34px;
+    cursor: pointer;
+    line-height: 24px;
+}
+.custom-checkbox + label:before {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #fff;
+}
+.custom-checkbox:checked + label:after {
+    border-bottom: 2px solid #2E58A6;
+    border-left: 2px solid  #2E58A6;
+    width: 14px;
+    height: 8px;
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    transform: rotate(-45deg);
+}
+
