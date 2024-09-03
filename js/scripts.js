@@ -29,6 +29,26 @@ $(() => {
 
 
 
+  // Аккордион
+  $('.accordion .accordion_item .accordion_item-head').click(function (e) {
+    e.preventDefault()
+
+    const $item = $(this).closest('.accordion_item'),
+      $accordion = $(this).closest('.accordion')
+
+    if ($item.hasClass('active')) {
+      $item.removeClass('active').find('.accordion_item-data').slideUp(300)
+    } else {
+      $accordion.find('.accordion_item').removeClass('active')
+      $accordion.find('.accordion_item-data').slideUp(300)
+
+      $item.addClass('active').find('.accordion_item-data').slideDown(300)
+    }
+  })
+
+
+
+
   let header = $('header');
   $(window).scroll(function () {
     if ($(this).scrollTop() > 20) {
