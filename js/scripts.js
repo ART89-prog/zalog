@@ -47,6 +47,49 @@ $(() => {
   })
 
 
+  const clientSliders = [],
+		client = document.querySelectorAll('.reviews .swiper')
+
+	client.forEach(function (el, i) {
+		el.classList.add('client_s' + i)
+
+		let options = {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			preloadImages: false,
+			lazy: true,
+			breakpoints: {
+				0: {
+					spaceBetween: 20,
+					slidesPerView: 1
+				},
+				479: {
+					spaceBetween: 20,
+					slidesPerView: 2
+				},
+				768: {
+					spaceBetween: 20,
+					slidesPerView: 3
+				}
+			},
+			pagination: {
+				el: '.client .swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.client .swiper-button-next',
+				prevEl: '.client .swiper-button-prev'
+			}
+		}
+
+		clientSliders.push(new Swiper('.client_s' + i, options))
+	})
+
+
 
 
   let header = $('header');
@@ -120,77 +163,6 @@ $(() => {
 
 
 
-  var swiper = new Swiper(".news .swiper", {
-
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-      formatFractionCurrent: function (number) {
-        if (number < 10) {
-          number = '0' + number;
-        }
-        return number;
-      },
-      formatFractionTotal: function (number) {
-        if (number < 10) {
-          number = '0' + number;
-        }
-        return number;
-      },
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      480: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      767: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      1023: {
-        slidesPerView: 3,
-        spaceBetween: 30
-      }
-    }
-  });
-
-
-
-  var swiper = new Swiper(".modal .swiper", {
-
-    slidesPerView: 1,
-    spaceBetween: 0,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 0
-      },
-      480: {
-        slidesPerView: 1,
-        spaceBetween: 0
-      },
-      640: {
-        slidesPerView: 1,
-        spaceBetween: 0
-      }
-    }
-  });
-
-
 
 
 
@@ -217,7 +189,7 @@ $(() => {
       if (!fakeResize2) {
         fakeResize2 = true
 
-        if (windowW < 360) document.getElementsByTagName('meta')['viewport'].content = 'width=360, user-scalable=no'
+        if (windowW < 320) document.getElementsByTagName('meta')['viewport'].content = 'width=320, user-scalable=no'
       } else {
         fakeResize = false
         fakeResize2 = true

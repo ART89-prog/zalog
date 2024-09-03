@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	fakeResize = false
 	fakeResize2 = true
 
-	if (document.body.clientWidth < 360) {
-	document.getElementsByTagName('meta')['viewport'].content = 'width=360, user-scalable=no'
+	if (document.body.clientWidth < 320) {
+	document.getElementsByTagName('meta')['viewport'].content = 'width=320, user-scalable=no'
 	}
 	
 	if (is_touch_device()) {
