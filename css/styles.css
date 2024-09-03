@@ -1063,6 +1063,7 @@ header .menu .item:active>a {
     width: 100%;
     height: 100%;
     border-radius: 5px;
+    object-fit: cover;
 }
 .reviews_item-name {
     font-family: 'Geometria';
@@ -1089,6 +1090,7 @@ header .menu .item:active>a {
     line-height: 1.2;
     color: #F36F21;
     margin-top: 30px;
+    transition: all 0.4s;
 }
 .swiper-pagination {
 }
@@ -1096,7 +1098,56 @@ header .menu .item:active>a {
 }
 .swiper-button-next {
 }
-
+.reviews_item-text p.hide {
+    display: none;
+}
+.reviews_item-link.active {
+    display: none;
+}
+.reviews_item-text p:last-child {
+    margin-top: 30px;
+}
+.reviews_item-link:hover img {
+    transform: rotate(90deg);
+}
+.reviews .swiper {
+    margin-bottom: 55px;
+}
+.swiper {
+    overflow: visible !important;
+}
+.swiper-slide.visible {
+    display: flex;
+    visibility: visible;
+    height: auto;
+    pointer-events: auto;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-slide.active {
+    display: flex;
+    visibility: visible;
+    height: auto;
+    pointer-events: auto;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-slide {
+    position: relative;
+    display: flex;
+    visibility: hidden;
+    width: auto;
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-wrapper {
+    align-items: flex-start;
+}
 
 
 

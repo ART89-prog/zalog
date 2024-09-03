@@ -47,48 +47,55 @@ $(() => {
   })
 
 
-  const clientSliders = [],
-		client = document.querySelectorAll('.reviews .swiper')
+  const reviewsSliders = [],
+  reviews = document.querySelectorAll('.reviews .swiper')
 
-	client.forEach(function (el, i) {
-		el.classList.add('client_s' + i)
+  reviews.forEach(function (el, i) {
+    el.classList.add('reviews_s' + i)
 
-		let options = {
-			loop: true,
-			speed: 500,
-			watchSlidesProgress: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-			preloadImages: false,
-			lazy: true,
-			breakpoints: {
-				0: {
-					spaceBetween: 20,
-					slidesPerView: 1
-				},
-				479: {
-					spaceBetween: 20,
-					slidesPerView: 2
-				},
-				768: {
-					spaceBetween: 20,
-					slidesPerView: 3
-				}
-			},
-			pagination: {
-				el: '.client .swiper-pagination',
-				type: 'bullets',
-				clickable: true,
-			},
-			navigation: {
-				nextEl: '.client .swiper-button-next',
-				prevEl: '.client .swiper-button-prev'
-			}
-		}
+    let options = {
+      loop: true,
+      speed: 500,
+      watchSlidesProgress: true,
+      slideActiveClass: 'active',
+      slideVisibleClass: 'visible',
+      preloadImages: false,
+      lazy: true,
+      breakpoints: {
+        0: {
+          spaceBetween: 20,
+          slidesPerView: 1
+        },
+        479: {
+          spaceBetween: 20,
+          slidesPerView: 2
+        },
+        768: {
+          spaceBetween: 20,
+          slidesPerView: 3
+        }
+      },
+      pagination: {
+        el: '.reviews .swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.reviews .swiper-button-next',
+        prevEl: '.reviews .swiper-button-prev'
+      }
+    }
 
-		clientSliders.push(new Swiper('.client_s' + i, options))
-	})
+    reviewsSliders.push(new Swiper('.reviews_s' + i, options))
+  })
 
+
+  // Показать контент 
+  $(".reviews_item-link").click(function (e) {
+    e.preventDefault();
+    $(this).next().removeClass("hide");
+    $(this).addClass("active");
+  });
 
 
 
