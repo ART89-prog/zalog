@@ -746,10 +746,33 @@ header .menu .item:active>a {
     gap: 42px;
 }
 .consultation_info {
+    width: 305px;
+    flex-shrink: 0;
 }
 .consultation_title {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 20px;
 }
 .consultation_text {
+    font-family: 'Geometria';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.27;
+    color: #FFFFFF;
+}
+.consultation_info a {
+    font-family: 'Geometria';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 30px;   
+    text-decoration: none;
+    display: block;
 }
 .line {
 }
@@ -773,17 +796,17 @@ header .menu .item:active>a {
     width: 100%;
 }
 .consultation .line .field input {
-    padding: 20px;
+    padding: 19px 40px;
     width: 100%;
-    height: 59px;
-    background: #F2F9FA;
-    border-radius: 6px;
+    height: 60px;
+    background: #fff;
+    border-radius: 5px;
     border: none;
-    font-family: var(--font_family);
+    font-family: 'Nunito';
     font-weight: 400;
     font-size: 16px;
-    line-height: 120%;
-    color: #000;
+    line-height: 22px;
+    color: #2C2C2C;
 }
 .consultation .line .field input::-webkit-input-placeholder {
     font-family: var(--font_family);
@@ -884,20 +907,70 @@ header .menu .item:active>a {
 
 
 
+.partner {
+}
+.cont {
+}
+.partner_title {
+}
+.title {
+}
+.partner_wrap {
+    display: flex;
+    gap: 20px;
+}
+.partner_items {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 68px;
+    row-gap: 44px;
+    background: #F7F6F9;
+    border: 0.5px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 35px 43px 38px 39px;
+    }
+.partner_items > * {
+    width: calc(100%/4 - 51px);
+    display: flex;
+    justify-content: center;
+}
+.partner_info {
+    background: #3363C3;
+    border: 0.5px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 80px 50px;
+    width: 400px;
+    flex-shrink: 0;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.35;
+    color: #FFFFFF;
+}
+.partner_info p + p {
+    margin-top: 30px;
+}
 
 
 
 
 
+.accordion_item {
+    margin-bottom: 2px;
+}
 .accordion_item-data {
     display: none;
 }
 .accordion_item.active .accordion_item-icon {
-    transform: rotate(90deg);
     left: 33px;
     top: 19px;
 }
 .accordion_item .accordion_item-icon-plus {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 43px;
+    color: #F36F21;
     display: block;
 }
 .accordion_item.active .accordion_item-icon-plus {
@@ -907,57 +980,61 @@ header .menu .item:active>a {
     display: none;
 }
 .accordion_item.active .accordion_item-icon-minus {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 43px;
+    color: #F36F21;
     display: block;
-    margin-top: -45px;
+    margin-top: -5px;
 }
 .accordion_item-head {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px 0 29px;
+    padding: 15px 30px;
     position: relative;
-    cursor: pointer;        
+    cursor: pointer;  
+    background: #F7F6F9;
+    border-radius: 5px;   
+    gap: 19px;   
 }
 .accordion_item-title {
-    font-family: var(--font_family);
-    font-weight: 600;
-    font-size: var(--font_size);
-    line-height: 29px;
-    text-transform: uppercase;
-    color: var(--text_color);
-    transition: all .4s;  
-    margin-right: 15px;
+    font-family: 'Geometria';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #2E58A6;
 }
-.accordion_item-head:hover .accordion_item-title {
-    background: linear-gradient(180deg, #812343 0.19%, #BC2848 102.61%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+.accordion_item.active .accordion_item-title {
+    font-weight: 700;
+}
+.accordion_item:hover .accordion_item-title {
+    font-weight: 700;
 }
 .accordion_item-data {
-    font-family: 'Inter';
-    font-weight: 300;
-    font-size: var(--font_size);
-    line-height: 32px;
-    color: var(--text_color);
-    padding: 29px 0 30px;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #000000;
+    border-radius: 5px;
+    padding: 18px 62px 29px;
+    background: #fff;
+    max-width: 838px;
 }
 .accordion_item-data p + p {
     margin-top: 20px;
 }
-.accordion_item.active .accordion_item-title {
-    background: linear-gradient(180deg, #812343 0.19%, #BC2848 102.61%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    border-bottom: 1px solid #331212;
-    padding-bottom: 30px;
-}
-.accordion_item:last-child {
-    margin-bottom: 0px;
-}
-.accordion_item.active .accordion_item-head {
-    padding-bottom: 0;
+
+
+
+
+
+
+
+footer {
+    height: 30px;
+    width: 100%;
+    background:#0466C8;
+    margin-top: 30px;
 }
