@@ -1,0 +1,18 @@
+@media print, (max-width: 1300px) {
+
+    .contact_items > * {
+        width: calc(100%/2 - 15px);
+    }
+    .about_img {
+        width: 444px;
+        height: 480px;
+    }
+    .about_info {
+        width: calc(100% - 490px);
+    }
+
+
+
+
+}
+

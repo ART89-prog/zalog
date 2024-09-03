@@ -1,0 +1,17 @@
+@media print, (max-width: 1187px) {
+
+    .service_items {
+        row-gap: 40px;
+        column-gap: 20px;
+    }
+    .service_items > * {
+        padding: 13px 25px 13px 20px;
+    }
+    .service_item::before {
+        left: 12px;
+    }
+   
+
+
+
+}
