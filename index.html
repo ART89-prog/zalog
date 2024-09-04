@@ -627,11 +627,11 @@
 								<div class="contact_left-items">
 									<div class="contact_left-item">
 										<div class="contact_left-item-label">Телефон</div>
-										<a href="tel:74951773758" class="contact_left-item-text">+7 (495) 177 37 58</a>
+										<a href="tel:74951773758" class="contact_left-item-text phone">+7 (495) 177 37 58</a>
 									</div>
 									<div class="contact_left-item">
 										<div class="contact_left-item-label">E-mail</div>
-										<a href="mailto:" class="contact_left-item-text">info@talismancredit.ru</a>
+										<a href="mailto:info@talismancredit.ru" class="contact_left-item-text">info@talismancredit.ru</a>
 									</div>
 									<div class="contact_left-item">
 										<div class="contact_left-item-label">Адрес</div>
@@ -645,11 +645,31 @@
 								<a href="#" class="btn">Отправить заявку</a>
 								<a href="#" class="contact-logo"></a>
 								<div class="contact_soc">
-									
+									<a href="#">
+										<img src="images/whatsapp.svg" alt="">
+									</a>
+									<a href="#">
+										<img src="images/telegram.svg" alt="">
+									</a>
 								</div>
+								<ul>
+									<li>Срочный выкуп недвижимости</li>
+									<li>Залог недвижимости</li>
+									<li>Перезалог недвижимости</li>
+									<li>Ипотечное кредитование</li>
+								</ul>
 							</div>
 							<div class="contact_right">
-								
+								<div class="map_wrap">
+									<div id="map"></div>									
+								</div> 
+								<div class="contact_right-text">
+									<p>ООО «СД» (г. Москва, переулок Капранова, дом 3 стр.4 Бизнес центр "Премьер Плаза") компания, являющейся официальным партнером кредитных организаций, предоставляющих займы и кредиты на основании действующего законодательства РФ.
+										<br>(Лицензии: АО «Альфа-Банк» - №1326, АО «Банк ЖилФинанс» - №3138, АО ЮниКредит Банк - №1, ПАО «Совкомбанк» - №963, ПАО «Татфондбанк» - №3058, ПАО АКБ "Металлинвестбанк" - №2440, АО «Райффайзенбанк» - №3292, АКБ «Абсолют Банк» (ПАО) - №2306, ПАО «ТрансКапиталБанк» - №2210, АО «АБ «Россия» №328, ООО Национальная фабрика ипотеки №3403, ПАО Банк Зенит №3255, АО «КБ ДельтаКредит» №3338, ПАО Банк «ФК Открытие» №2209, ПАО КБ "Восточный" №1460, ПАО АКБ "Связь-Банк" №14710, АО КБ «Интерпромбанк» №3266, ПАО «АК БАРС» Банк №2590, "Газпромбанк" (Акционерное общество) №354, ПАО «Почта Банк» №650, АО «Россельхозбанк» №3349, ПАО Московский кредитный банк №1978, АКБ Российский капитал (ПАО) №2312, АО Банк «Развитие Столица» №3013, ПАО «БИНБАНК» №323, ПАО Банк «АЛЕКСАНДРОВСКИЙ» №53, АО Норвик Банк №902, АКБ Держава №2738, ООО "Первый Клиентский Банк" №3436, ПАО «БАНК УРАЛСИБ» №2275, Банк ВТБ (ПАО) №1000).</p>
+									<p>Представленная на сайте информация не является публичной офертой.</p>
+									<p>Наш сайт использует файлы cookie  для персонализации сервисов и повышения удобства пользования сайтом. Если вы не хотите использовать файлы cookie, отключите их в настройках браузера.</p>
+									<p>Соглашение на обработку персональных данных.</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -704,6 +724,21 @@
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 		
+
+		<script src="https://api-maps.yandex.ru/2.1.75/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+		<script>			
+			ymaps.ready(init);
+
+				function init () {
+					var myMap = new ymaps.Map('map', {
+							center: [55.797291,37.798107],
+							zoom: 14
+						})
+
+					myMap.geoObjects.add(myPlacemark1)
+						.add(myPlacemark2);
+				}
+		</script>
 
 	</body>
 </html>
