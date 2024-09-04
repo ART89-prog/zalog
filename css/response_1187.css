@@ -22,6 +22,9 @@
         display: flex;
         justify-content: center;
     }
+    .calculator_left {
+        width: calc(100% - 530px);
+    }
 
 
 

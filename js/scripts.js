@@ -8,25 +8,6 @@ $(() => {
   OVERLAY = document.querySelector('.overlay')
 
 
-  // Моб. меню
-  $('header .mob_menu_btn').click((e) => {
-    e.preventDefault()
-
-    $('header .mob_menu_btn').addClass('active')
-    $('body').addClass('menu_open')
-    $('header .menu').addClass('show')
-    $('.overlay').fadeIn(300)
-  })
-
-  $('header .close_btn, header .menu .item a, .overlay').click((e) => {
-    e.preventDefault()
-
-    $('header .mob_menu_btn').removeClass('active')
-    $('body').removeClass('menu_open')
-    $('header .menu').removeClass('show')
-    $('.overlay').fadeOut(300)
-  })
-
 
 
   // Аккордион
@@ -48,7 +29,7 @@ $(() => {
 
 
   const reviewsSliders = [],
-  reviews = document.querySelectorAll('.reviews .swiper')
+    reviews = document.querySelectorAll('.reviews .swiper')
 
   reviews.forEach(function (el, i) {
     el.classList.add('reviews_s' + i)
@@ -94,6 +75,141 @@ $(() => {
   })
 
 
+
+
+
+
+  var $range = $("#amount-slider");
+  var $input = $("#amount");
+  var instance;
+  var min = 1000000;
+  var max = 100000000;
+  var step = 1000000;
+
+  $range.ionRangeSlider({
+    min: min,
+    max: max,
+    prefix: "От ",
+    postfix: ' руб.',
+    max_prefix: "До ",
+    from: 2000000,
+    step: step,
+    onStart: function (data) {
+      $input.prop("value", data.from);
+    },
+    onChange: function (data) {
+      $input.prop("value", data.from);
+    }
+  });
+
+  instance = $range.data("ionRangeSlider");
+
+  $input.on("input", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < min) {
+      val = min;
+      $(this).prop("value", val);
+    } else if (val > max) {
+      val = max;
+      $(this).prop("value", val);
+    }
+
+    instance.update({
+      from: val
+    });
+  });
+
+
+
+
+
+  var $range2 = $("#amount-slider2");
+  var $input2 = $("#amount2");
+  var instance;
+  var min = 0;
+  var max = 100;
+  var step = 1;
+
+  $range2.ionRangeSlider({
+    min: min,
+    max: max,
+    from: 12,
+    step: step,
+    onStart: function (data) {
+      $input2.prop("value", data.from);
+    },
+    onChange: function (data) {
+      $input2.prop("value", data.from);
+    }
+  });
+
+  instance = $range2.data("ionRangeSlider");
+
+  $input2.on("input", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < min) {
+      val = min;
+      $(this).prop("value", val);
+    } else if (val > max) {
+      val = max;
+      $(this).prop("value", val);
+    }
+
+    instance.update({
+      from: val
+    });
+  });
+
+
+
+  var $range3 = $("#amount-slider3");
+  var $input3 = $("#amount3");
+  var instance;
+  var min = 1;
+  var max = 30;
+  var step = 1;
+
+  $range3.ionRangeSlider({
+    min: min,
+    max: max,
+    prefix: "От ",
+    postfix: ' года',
+    from: 3,
+    step: step,
+    onStart: function (data) {
+      $input3.prop("value", data.from);
+    },
+    onChange: function (data) {
+      $input3.prop("value", data.from);
+    }
+  });
+
+  instance = $range3.data("ionRangeSlider");
+
+  $input3.on("input", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < min) {
+      val = min;
+      $(this).prop("value", val);
+    } else if (val > max) {
+      val = max;
+      $(this).prop("value", val);
+    }
+
+    instance.update({
+      from: val
+    });
+  });
+
+
+
+
   // Показать контент 
   $(".reviews_item-link").click(function (e) {
     e.preventDefault();
@@ -103,28 +219,6 @@ $(() => {
 
 
 
-  let header = $('header');
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 20) {
-      header.addClass('header_fixed');
-    } else {
-      header.removeClass('header_fixed');
-    }
-  });
-
-
-  // Скрол к пунктам меню
-  $(".scroll").on("click", function (e) {
-    e.preventDefault();
-    let id = $(this).attr("href");
-
-    $("html, body").animate({
-      scrollTop: $(id).offset().top - 90
-    }, {
-      duration: 400,
-      easing: "swing"
-    });
-  });
 
 
   $('body').on('click', '.modal_link', function (e) {

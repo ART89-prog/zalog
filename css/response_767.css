@@ -70,6 +70,9 @@
     .header_phone {
         margin-top: 0;
     }
+    .calculator {
+        display: none;
+    }
 
 
 

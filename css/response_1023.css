@@ -70,11 +70,20 @@
     .contact_left {
         width: 100%;
     }
-    .contact_bottom {
-        display: none;
-    }
     .contact_left-text p + p {
         margin-top: 15px;
+    }
+    .contact_bottom .contact_left {
+        display: none;
+    }
+    .contact_bottom {
+        margin-top: 0;
+    }
+    .calculator_wrap form {
+        flex-direction: column;
+    }
+    .calculator_left {
+        width: 100%;
     }
 
 
