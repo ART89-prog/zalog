@@ -1,17 +1,26 @@
 @media print, (max-width: 1300px) {
 
-    .contact_items > * {
-        width: calc(100%/2 - 15px);
+    .first-section_text {
+        max-width: 500px;
     }
-    .about_img {
-        width: 444px;
-        height: 480px;
+    .service_items > * {
+        padding: 30px;
+        gap: 20px;
     }
-    .about_info {
-        width: calc(100% - 490px);
+    .partner_info {
+        width: 350px;
+        padding: 80px 30px;
     }
-
-
+    .partner_items {
+        padding: 25px;
+    }
+    .map_wrap {
+        width: 500px;
+        height: 436px;
+    }
+    .contact_left {
+        width: calc(100% - 523px);
+    }
 
 
 }

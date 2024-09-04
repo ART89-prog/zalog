@@ -1,27 +1,104 @@
 @media (max-width: 479px) {
 
+
+    .header_logo {
+        width: 87px;
+        height: 45px;
+    }
     .header_phone {
         font-size: 20px;
     }
-    .header_logo {
-        width: 46px;
-        height: 50px;
-    }
-    header {
-        padding: 15px 0;
-    }
-    .header_fixed {
-        padding: 15px 0;
-    }
-    header .menu {
-        top: 70px;
+    .header_phone span {
+        font-size: 10px;
     }
     .cont {
-        padding: 0 15px;
+        padding: 0 10px;
     }
-    .first-section {
-        margin-top: 80px;
+    header {
+        padding: 12px 0 20px;
+        background: #fff;
     }
+    .first-section ul li {
+        font-size: 12px;
+    }
+    .first-section ul li:before {
+        top: 4px;
+    }
+    .first-section ul {
+        margin-bottom: 70px;
+    }
+    .advantages_item-title {
+        font-size: 14px;
+    }
+    .advantages_item-text {
+        font-size: 12px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .service_item-img {
+        width: 170px;
+        height: 170px;
+    }
+    .service_item-title {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .service_item-text {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .service_items > * {
+        padding: 35px 25px;
+    }
+    .btn {
+        width: 100%;
+    }
+    .stage_item-number {
+        width: 55px;
+        height: 51px;
+    }
+    .stage_item-title {
+        font-size: 14px;
+    }
+    .stage_item-top {
+        margin-bottom: 10px;
+    }
+    .stage_item-text {
+        font-size: 12px;
+    }
+    .stage_items {
+        gap: 10px;
+    }
+    .accordion_item-data {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .accordion_item-title {
+        font-size: 14px;
+    }
+    .accordion_item .accordion_item-icon-plus,
+    .accordion_item .accordion_item-icon-minus {
+        font-size: 25px;
+    }
+    .reviews_item-avatar {
+        width: 70px;
+        height: 70px;
+    }
+    .reviews_item-name {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .reviews_item-author {
+        gap: 15px;
+    }
+    .reviews_item-text {
+        font-size: 12px;
+    }
+    .reviews_item-link {
+        margin-top: 15px;
+    }
+
 
 
    

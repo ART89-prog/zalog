@@ -66,11 +66,15 @@ $(() => {
           spaceBetween: 20,
           slidesPerView: 1
         },
-        479: {
+        610: {
+          spaceBetween: 20,
+          slidesPerView: 1
+        },
+        768: {
           spaceBetween: 20,
           slidesPerView: 2
         },
-        768: {
+        1023: {
           spaceBetween: 20,
           slidesPerView: 3
         }

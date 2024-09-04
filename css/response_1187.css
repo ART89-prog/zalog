@@ -1,16 +1,28 @@
 @media print, (max-width: 1187px) {
 
-    .service_items {
-        row-gap: 40px;
-        column-gap: 20px;
+    .advantages_items > * {
+        width: calc(100% / 2 - 15px);
     }
-    .service_items > * {
-        padding: 13px 25px 13px 20px;
+    .service_item-img {
+        width: 160px;
+        height: 160px;
     }
-    .service_item::before {
-        left: 12px;
+    .service_item-info {
+        width: calc(100% - 190px);
     }
-   
+    .reason_items > * {
+        padding: 20px;
+    }
+    .reason_item-img {
+        width: 160px;
+        height: 160px;
+    }
+    .partner_items > * {
+        width: calc(100% / 3 - 46px);
+        display: flex;
+        justify-content: center;
+    }
+
 
 
 
