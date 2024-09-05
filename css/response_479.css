@@ -116,6 +116,42 @@
     .contact_right-text {
         font-size: 7px;
     }
+    .calculator .btn,
+    .service_item-btn {
+        width: 250px;
+        margin: 0 auto;
+    }
+    .modal {
+        padding: 30px 10px;
+    }
+    .consultation_btn {
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+    }
+    .consultation .line .field input {
+        padding: 20px;
+        height: 50px;
+    }
+    .modal_text {
+        font-size: 15px;
+    }
+    .modal .consultation_title {
+        font-size: 20px;
+    }
+    .modal3 {
+        padding: 20px 15px;
+    }
+    .modal3_title {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+    .modal3_text {
+        font-size: 13px; 
+    }
+    .modal3_text p + p {
+        margin-top: 12px;
+    }
 
 
 
