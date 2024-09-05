@@ -70,8 +70,46 @@
     .header_phone {
         margin-top: 0;
     }
-    .calculator {
+    .calculator_right .line {
         display: none;
+    }
+    .calculator_right .checkbox {
+        display: none;
+    }
+    .calculator_right {
+        padding: 0px;
+        background: none;
+        border: none;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .calculator_wrap form {
+        padding: 10px 10px 35px;
+        background: #F7F6F9;
+        border: 0.5px solid #E0E0E0;
+        border-radius: 5px;   
+    }
+    .calculator_left-text {
+        display: none;
+    }
+    .calculator_right-text {
+        order: -1;
+        font-family: 'Geometria';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 14px;
+        color: #000000;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    input#price {
+        height: 40px;
+        margin-bottom: 30px;
+    }
+    .calculator_left label {
+        font-size: 11px;
     }
 
 
