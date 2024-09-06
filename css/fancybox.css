@@ -559,7 +559,7 @@ html.with-fancybox body.hide-scrollbar {
     width: 100%;
     height: 100%;
     margin: 0 var(--fancybox-slide-gap) 0 0;
-    padding: 4px;
+    padding: 20px;
     overflow: auto;
     overscroll-behavior: contain;
     transform: translate3d(0, 0, 0);

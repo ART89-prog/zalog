@@ -1436,6 +1436,7 @@ input#amount3 {
     color: #2E58A6;
     border: none;
     width: 100%;
+    margin-bottom: 15px;
 }
 .irs--flat .irs-from:before, 
 .irs--flat .irs-to:before, 
