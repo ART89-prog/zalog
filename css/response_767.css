@@ -168,7 +168,15 @@
     .modal_text {
         font-size: 18px;
     }
-
+    .header_wrap {
+        align-items: flex-start;
+    }
+    .contact_left {
+        display: none;
+    }
+    .contact_right {
+        width: 100%;
+    }
 
 
 

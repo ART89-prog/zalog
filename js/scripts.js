@@ -189,9 +189,12 @@ $(() => {
     // Показать контент 
     $(".reviews_item-link").click(function(e) {
         e.preventDefault();
-        $(this).next().removeClass("hide");
-        $(this).addClass("active");
+        $(this).toggleClass("active");
+        $(this).prev().toggleClass("hide");
     });
+
+
+
     $('body').on('click', '.modal_link', function(e) {
         e.preventDefault()
         Fancybox.close(true)
