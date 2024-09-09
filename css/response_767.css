@@ -2,7 +2,7 @@
 
 
     .first-section_title {
-        font-size: 24px;
+        font-size: 30px;
     }
     .first-section_text {
         display: none;
@@ -158,8 +158,8 @@
         display: block;
         font-family: 'Montserrat';
         font-weight: 400;
-        font-size: 10px;
-        line-height: 12px;
+        font-size: 15px;
+        line-height: 1.2;
         text-align: center;
         color: #000000;
         max-width: 270px;
@@ -171,10 +171,13 @@
     .header_wrap {
         align-items: flex-start;
     }
-    .contact_left {
+    .contact_bottom .contact_left {
         display: none;
     }
     .contact_right {
+        width: 100%;
+    }
+    .contact_top .contact_left {
         width: 100%;
     }
 

@@ -85,7 +85,9 @@
     .contact_right {
         width: calc(100% - 374px);
     }
-
+    .contact_top .contact_right {
+        width: 100%;
+    }
 
 
 

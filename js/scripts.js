@@ -171,18 +171,6 @@ $(() => {
 
 
 
-    function digits_int(target){
-        val = $(target).val().replace(/[^0-9]/g, '');
-        val = val.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
-        $(target).val(val);
-    }
-     
-    $(function($){
-        $('body').on('input', '#amount', function(e){
-            digits_int(this);
-        });
-        digits_int('#amount');
-    });
 
 
 
@@ -255,7 +243,7 @@ $(() => {
             }
             if (!fakeResize2) {
                 fakeResize2 = true
-                if (windowW < 320) document.getElementsByTagName('meta')['viewport'].content = 'width=320, user-scalable=no'
+                if (windowW < 360) document.getElementsByTagName('meta')['viewport'].content = 'width=360, user-scalable=no'
             } else {
                 fakeResize = false
                 fakeResize2 = true

@@ -2,14 +2,14 @@
 
 
     .header_logo {
-        width: 87px;
-        height: 45px;
+        width: 100px;
+        height: 48px;
     }
     .header_phone {
-        font-size: 20px;
+        font-size: 22px;
     }
     .header_phone span {
-        font-size: 10px;
+        font-size: 14px;
     }
     .cont {
         padding: 0 10px;
@@ -19,65 +19,71 @@
         background: #fff;
     }
     .first-section ul li {
-        font-size: 12px;
+        font-size: 14px;
     }
     .first-section ul li:before {
         top: 4px;
     }
     .first-section ul {
-        margin-bottom: 70px;
+        margin-bottom: 46px;
+    }
+    .first-section_wrap {
+        padding: 44px 22px 40px;
     }
     .advantages_item-title {
-        font-size: 14px;
+        font-size: 20px;
+        font-weight: 400;
     }
     .advantages_item-text {
-        font-size: 12px;
+        font-size: 15px;
     }
     .title {
-        font-size: 20px;
+        font-size: 25px;
     }
     .service_item-img {
         width: 170px;
         height: 170px;
     }
     .service_item-title {
-        font-size: 14px;
+        font-size: 20px;
+        font-weight: 400;
         margin-bottom: 10px;
     }
     .service_item-text {
-        font-size: 12px;
-        margin-bottom: 10px;
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+    .service_item {
+        gap: 10px;
     }
     .service_items > * {
-        padding: 35px 25px;
+        padding: 35px 25px;        
     }
     .btn {
         width: 100%;
-        height: 50px;
-        line-height: 50px;
     }
     .stage_item-number {
         width: 55px;
         height: 51px;
     }
     .stage_item-title {
-        font-size: 14px;
+        font-size: 22px;
     }
     .stage_item-top {
         margin-bottom: 10px;
     }
     .stage_item-text {
-        font-size: 12px;
+        font-size: 15px;
     }
     .stage_items {
         gap: 10px;
     }
     .accordion_item-data {
         padding: 10px;
-        font-size: 12px;
+        font-size: 15px;
     }
     .accordion_item-title {
-        font-size: 14px;
+        font-size: 20px;
     }
     .accordion_item .accordion_item-icon-plus,
     .accordion_item .accordion_item-icon-minus {
@@ -88,26 +94,25 @@
         height: 70px;
     }
     .reviews_item-name {
-        font-size: 14px;
-        font-weight: 700;
+        font-size: 22px;
     }
     .reviews_item-author {
         gap: 15px;
     }
     .reviews_item-text {
-        font-size: 12px;
+        font-size: 15px;
     }
     .reviews_item-link {
         margin-top: 15px;
     }
     .contact_left-text {
-        font-size: 12px;
+        font-size: 15px;
     }
     .contact_left-item-label {
         font-size: 14px;
     }
     .contact_left-item-text {
-        font-size: 12px;
+        font-size: 15px;
     }
     .contact_left-item-text.phone {
         font-size: 20px;
@@ -118,7 +123,7 @@
     }
     .calculator .btn,
     .service_item-btn {
-        width: 250px;
+        width: 100%;
         margin: 0 auto;
     }
     .modal {
@@ -151,6 +156,9 @@
     }
     .modal3_text p + p {
         margin-top: 12px;
+    }
+    .contact_left-item-label {
+        font-size: 22px;
     }
 
 
