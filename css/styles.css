@@ -1067,6 +1067,7 @@ header .menu .item:active>a {
 }
 .accordion_item.active .accordion_item-title {
     font-weight: 700;
+    color: #2E58A6;
 }
 .accordion_item:hover .accordion_item-title {
     font-weight: 700;
@@ -1115,7 +1116,7 @@ header .menu .item:active>a {
 .reviews_item-name {
     font-family: 'Geometria';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 101.4%;
     color: #263238;
 }
@@ -1283,7 +1284,7 @@ header .menu .item:active>a {
     font-family: 'Geometria';
     font-weight: 500;
     font-size: 13px;
-    line-height: 52.9%;
+    line-height: 126%;
     color: #000000;
     margin-bottom: 5px;
 }
@@ -1345,6 +1346,9 @@ header .menu .item:active>a {
 }
 .contact_right-text p + p {
     margin-top: 16px;
+}
+.contact_left-item-box .contact_soc {
+    display: none;
 }
 .map_wrap {
     position: relative;

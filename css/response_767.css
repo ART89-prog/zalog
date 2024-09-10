@@ -43,8 +43,8 @@
         margin-bottom: 25px;
     }
     .stage_item-title {
-        font-weight: 700;
-        font-size: 18px;
+        font-weight: 400;
+        font-size: 22px;
     }
     .consultation {
         display: none;
@@ -180,7 +180,29 @@
     .contact_top .contact_left {
         width: 100%;
     }
-
+    .contact_left-item-label {
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .contact_left-text {
+        font-size: 15px;
+    }
+    .contact_left-item-text {
+        font-size: 15px;
+    }
+    .contact_left-item-text.phone {
+        font-size: 22px;
+        color: #F36F21;
+    }
+    .contact_left-item-box .contact_soc {
+        display: flex;
+        margin-top: 0;
+    }
+    .contact_left-item-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
 
 

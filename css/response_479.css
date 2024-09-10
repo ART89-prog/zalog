@@ -105,19 +105,6 @@
     .reviews_item-link {
         margin-top: 15px;
     }
-    .contact_left-text {
-        font-size: 15px;
-    }
-    .contact_left-item-label {
-        font-size: 14px;
-    }
-    .contact_left-item-text {
-        font-size: 15px;
-    }
-    .contact_left-item-text.phone {
-        font-size: 20px;
-        color: #F36F21;
-    }
     .contact_right-text {
         font-size: 7px;
     }
@@ -157,9 +144,7 @@
     .modal3_text p + p {
         margin-top: 12px;
     }
-    .contact_left-item-label {
-        font-size: 22px;
-    }
+
 
 
 
